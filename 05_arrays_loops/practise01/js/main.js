@@ -55,56 +55,14 @@ addBtn.addEventListener('click', () => {
 })
 
 
+const menuList = document.getElementById('menu-list');
+const menus = ['ホーム', 'サービス紹介', '制作実績', '会社概要', 'お問い合わせ'];
 
+let text = '';
 
+for (let i = 0; i < menus.length; i++) {
+    text += `<li>${menus[i]}<li>`;
+}
 
+menuList.innerHTML = text;
 
-
-
-
-
-
-
-
-
-
-
-// removeBtn.addEventListener('click', () => {
-//     steps.pop();
-//     stepIndicator.textContent = `STEP ${currentIndex + 1} / ${steps.length}`;
-
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-/*<body>
-    <h1 id="main-title">配列と繰り返し処理</h1>
-
-    <!-- ステップガイドで使用：ステップメッセージ表示エリア -->
-    <section>
-        <h2>ステップガイド</h2>
-        <p id="step-indicator">STEP 1 / 4</p>
-        <p id="step-message">ここにガイドメッセージが表示されます。</p>
-        <button id="next-btn">次へ進む</button>
-
-        <div class="add-step-form">
-            <input type="text" id="new-step-input" placeholder="新しいステップを入力">
-            <button type="button" id="add-btn">ステップを追加</button>
-        </div>
-    </section>
-
-    <section>
-        <h2>メニュー一覧（自動生成）</h2>
-        <ul id="menu-list"></ul>
-    </section>
-</body>
- */
